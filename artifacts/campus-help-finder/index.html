@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f4ed" />
+    <title>Campus Help Finder — Support is closer than you think</title>
+    <meta name="description" content="Find free campus support for food, wellbeing, learning, legal questions, childcare, and a safe place to stay." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Campus Help Finder" />
+    <meta property="og:description" content="A clear starting point for free student support." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Campus Help Finder" />
+    <meta name="twitter:description" content="A clear starting point for free student support." />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Campus Help Finder home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 35 13v14L20 35.5 5 27V13L20 4.5Z" stroke="currentColor" stroke-width="1.5"/><path d="M20 12v16M12 20h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-name">Campus <strong>Help Finder</strong></span>
+      </a>
+      <p class="topbar-note"><span class="status-dot" aria-hidden="true"></span> Free support for students</p>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-rule"></span> A good place to start</p>
+          <h1 id="page-title">Support is closer<br class="desktop-break" /> than you think.</h1>
+          <p class="intro-text">Whatever’s weighing on you, there are people on campus ready to help. Find a free resource and take the next step at your own pace.</p>
+        </div>
+        <div class="intro-art" aria-hidden="true">
+          <div class="art-ring ring-one"></div>
+          <div class="art-ring ring-two"></div>
+          <div class="art-sun"></div>
+          <div class="art-note note-one">YOU<br>BELONG</div>
+          <div class="art-note note-two">HELP<br>IS HERE</div>
+          <svg class="art-sprig" viewBox="0 0 140 165" fill="none"><path d="M21 152C45 116 71 75 117 19" stroke="#315E51" stroke-width="2"/><path d="M47 112C24 107 17 91 19 78c19 2 31 14 28 34ZM69 80c-2-20 9-34 25-38 5 18-3 32-25 38ZM95 48c-9-18-4-34 8-44 12 14 11 29-8 44Z" fill="#789C80" stroke="#315E51" stroke-width="1.5"/><path d="M26 136c-3-15-15-23-27-22 0 15 9 24 27 22ZM57 96c-14-7-27-2-34 9 12 9 24 8 34-9Z" fill="#B9C99C" stroke="#315E51" stroke-width="1.5"/></svg>
+        </div>
+      </section>
+
+      <section class="finder" aria-labelledby="resources-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-eyebrow">The support directory</p>
+            <h2 id="resources-title">Find what you need</h2>
+          </div>
+          <p class="results-count" id="results-count" aria-live="polite">6 resources</p>
+        </div>
+
+        <form class="search-form" role="search" autocomplete="off" onsubmit="return false">
+          <label for="resource-search" class="sr-only">Search support resources</label>
+          <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.4 4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <input id="resource-search" type="search" placeholder="Search food, counseling, housing…" aria-describedby="search-hint" />
+          <span id="search-hint" class="search-hint">Search by need</span>
+          <button id="clear-search" class="clear-search" type="button" aria-label="Clear search" hidden>Clear</button>
+        </form>
+
+        <div class="resource-grid" id="resource-grid">
+          <article class="resource-card card-food" data-search="food pantry free groceries food essentials nourishment meals grocery">
+            <div class="card-topline"><span class="resource-icon icon-food" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 12h16l-1.2 15H9.2L8 12Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 12c0-3 1.8-5 4-5s4 2 4 5M13 18c1.2-1.2 2.2-1.2 3.2 0s2 1.2 3.2 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="card-index">01</span></div>
+            <h3>Food Pantry</h3>
+            <p>Pick up free groceries and food essentials in a welcoming, judgment-free space.</p>
+            <a class="learn-link" href="#" aria-label="Learn more about Food Pantry">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card card-counseling" data-search="counseling mental health wellbeing stress emotional support therapy">
+            <div class="card-topline"><span class="resource-icon icon-counseling" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 26s-10-5.6-10-13a5.5 5.5 0 0 1 10-3.2A5.5 5.5 0 0 1 26 13c0 7.4-10 13-10 13Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 16h3l1.5-3 3 6 1.5-3h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="card-index">02</span></div>
+            <h3>Counseling</h3>
+            <p>Talk with a caring counselor for free about stress, mental health, or whatever’s on your mind.</p>
+            <a class="learn-link" href="#" aria-label="Learn more about Counseling">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card card-tutoring" data-search="tutoring academic learning study homework courses subjects">
+            <div class="card-topline"><span class="resource-icon icon-tutoring" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M6 8.5c4-1.7 7.4-1.4 10 1v16c-2.6-2.4-6-2.7-10-1v-16ZM26 8.5c-4-1.7-7.4-1.4-10 1v16c2.6-2.4 6-2.7 10-1v-16Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 13h2.5M20 13h2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="card-index">03</span></div>
+            <h3>Tutoring</h3>
+            <p>Get free one-on-one help with coursework, study strategies, and challenging subjects.</p>
+            <a class="learn-link" href="#" aria-label="Learn more about Tutoring">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card card-legal" data-search="legal aid law advice tenant rights immigration paperwork attorney">
+            <div class="card-topline"><span class="resource-icon icon-legal" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 5v21M9 27h14M9 9h14M11 9l-5 9h10L11 9ZM21 9l-5 9h10l-5-9Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 18c0 2 2.2 3 5 3s5-1 5-3M16 18c0 2 2.2 3 5 3s5-1 5-3" stroke="currentColor" stroke-width="1.4"/></svg></span><span class="card-index">04</span></div>
+            <h3>Legal Aid</h3>
+            <p>Get free guidance on common legal questions, tenant rights, and paperwork.</p>
+            <a class="learn-link" href="#" aria-label="Learn more about Legal Aid">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card card-childcare" data-search="childcare child care parenting family daycare children">
+            <div class="card-topline"><span class="resource-icon icon-childcare" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 17c0-5.2 3.8-9 9-9s9 3.8 9 9v7H7v-7Z" stroke="currentColor" stroke-width="1.6"/><path d="M10 17c0-3.4 2.5-6 6-6s6 2.6 6 6M11 20h.1M21 20h.1M13 24v3M19 24v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M14 4h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span class="card-index">05</span></div>
+            <h3>Childcare</h3>
+            <p>Find free childcare options and family support for student parents.</p>
+            <a class="learn-link" href="#" aria-label="Learn more about Childcare">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card card-housing" data-search="emergency housing shelter safe place stay temporary accommodation">
+            <div class="card-topline"><span class="resource-icon icon-housing" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="m5 15 11-9 11 9v12H5V15Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 27v-8h8v8M10 14h.1M22 14h.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="card-index">06</span></div>
+            <h3>Emergency Housing</h3>
+            <p>Find a safe place to stay and free urgent housing support when you need it most.</p>
+            <a class="learn-link" href="#" aria-label="Learn more about Emergency Housing">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-mark" aria-hidden="true">?</span>
+          <h3>No matches this time</h3>
+          <p>Try a different word, or clear your search to see all six resources.</p>
+          <button class="empty-clear" type="button">Show all resources</button>
+        </div>
+      </section>
+      <aside class="reassurance">
+        <span class="reassurance-mark" aria-hidden="true">+</span>
+        <p><strong>Not sure where to begin?</strong> You don’t have to figure it out alone. Start with the resource that feels closest.</p>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <span>Campus Help Finder</span>
+      <span>Here for your next step.</span>
+    </footer>
+  </body>
+</html>
